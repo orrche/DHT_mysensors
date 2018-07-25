@@ -1,10 +1,10 @@
 
-ARDUINOPATH="/home/kent/Downloads/arduino-1.8.5"
 BOARDNAME="arduino:avr:nano:cpu=atmega328"
 
 TARGET="$(CURDIR)/output"
 
 mysensor_test.ino.hex: mysensor_test.ino
+	test -n "$(ARDUINOPATH)"  # $$ARDUINOPATH
 	mkdir -p $(TARGET)
 	
 	$(ARDUINOPATH)/arduino-builder \
