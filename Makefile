@@ -3,7 +3,7 @@ BOARDNAME="arduino:avr:nano:cpu=atmega328"
 
 TARGET="$(CURDIR)/output"
 
-mysensor_test.ino.hex: mysensor_test.ino
+mysensor_dht.ino.hex: mysensor_dht.ino
 	test -n "$(ARDUINOPATH)"  # $$ARDUINOPATH
 	mkdir -p $(TARGET)
 	
@@ -23,4 +23,4 @@ mysensor_test.ino.hex: mysensor_test.ino
 
 clean:
 	rm -rf $(TARGET)
-	rm mysensor_test.ino.hex
+	rm mysensor_dht.ino.hex
