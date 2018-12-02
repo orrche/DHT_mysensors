@@ -59,7 +59,7 @@ void loop()
   if (isnan(temperature)) {
     // Failed reading temperature from DHT
   } else {
-    // apply the offset before converting to something different than Celsius degrees
+    // apply the offset
     temperature += SENSOR_TEMP_OFFSET;
 
     send(msgTemp.set(temperature, 1));
