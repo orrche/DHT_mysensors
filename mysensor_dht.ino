@@ -48,7 +48,6 @@ void presentation()
 void setup()
 {
   dht.begin();
-  sleep(UPDATE_INTERVAL);
 }
 
 
