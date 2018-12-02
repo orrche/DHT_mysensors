@@ -53,6 +53,7 @@ void setup()
 
 void loop()      
 {  
+  dht.read(true);
   // Get temperature from DHT library
   float temperature = dht.readTemperature(!metric, false);
   if (isnan(temperature)) {
