@@ -13,7 +13,7 @@
 #include <DHT.h>
 
 // Set this to the pin you connected the DHT's data pin to
-#define DHT_DATA_PIN 3
+#define DHT_DATA_PIN 15
 
 // Set this offset if the sensor has a permanent small offset to the real temperatures.
 // Dependent in metric settings
